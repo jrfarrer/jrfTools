@@ -1,6 +1,6 @@
 #' Fivethirtyeight theme for ggplot2
 #'
-#' Creates a plot of the crayon colors in \code{\link{brocolors}}
+#' Creates a ggplot2 theme function
 #'
 #' @param base_size base font size, defaults to 8
 #' @param users_v character vector of users
@@ -11,10 +11,6 @@
 #' ggplot(mtcars, aes(weight, mpg)) + geom_point() + theme_jrf()
 #'
 #' @export
-devtools::use_package("ggplot2")
-
-pal538 <- c(dkgray = "#3C3C3C", medgray = "#D2D2D2", ltgray = "#F0F0F0", red = "#FF2700", blue = "#008FD5", green = "#77AB43")
-
 theme_jrf <- function(base_size = 8, users_v = c()) {
     ggplot2::theme(
         plot.background = ggplot2::element_rect(fill = "#F0F0F0", colour = "#606063"),
