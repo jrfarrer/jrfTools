@@ -5,8 +5,9 @@ Version: 0.1.0
 Author: Jordan Farrer
 Maintainer: Jordan Farrer <jordanrfarrer@gmail.com>
 Description: Jordan Farrer's personal functions
-Imports:
-    ggplot2
+Imports: 
+    tidyverse, 
+    car
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
