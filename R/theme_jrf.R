@@ -37,7 +37,7 @@ theme_jrf <- function(base_size = 8, users_v = c()) {
                                      hjust = 0.5, vjust = 0.5, angle = 0, lineheight = 0.9,
                                      margin = margin(), debug = FALSE),
         title = ggplot2::element_text(family = ifelse(Sys.info()[['user']] %in% users_v,"DecimaMonoPro", "Helvetica"),
-                                      ggplot2::margin = margin(t = 2, r = 0, b = 2, l = 0, unit = "pt")),
+                                      margin = ggplot2::margin(t = 2, r = 0, b = 2, l = 0, unit = "pt")),
         legend.margin = ggplot2::unit(0, 'cm'),
         legend.position = 'top',
         complete = TRUE
